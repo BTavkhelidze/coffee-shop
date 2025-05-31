@@ -1,5 +1,5 @@
 'use client';
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 import {
   MochaCup,
@@ -22,7 +22,7 @@ import {
   BlackCoffeeSlideImg,
   EspressoNavSlideImg,
   MochaNavSlideImg,
-} from '../../../public/images';
+} from '../../../../public/images';
 
 import Image, { StaticImageData } from 'next/image';
 
@@ -103,6 +103,23 @@ export default function CoffeCategSwiperSect2() {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const swiperRef = useRef<any>(null);
   const [activeIndex, setActiveIndex] = useState(0);
+  const [isMenuOpen, setIsMenuOpen] = useState(true);
+
+  useEffect(() => {
+    console.log(isMenuOpen);
+    if (isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+      document.documentElement.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+      document.documentElement.style.overflow = '';
+    }
+
+    return () => {
+      document.body.style.overflow = '';
+      document.documentElement.style.overflow = '';
+    };
+  }, [isMenuOpen]);
 
   return (
     <section className='relative w-full h-screen '>

@@ -1,8 +1,8 @@
 'use client';
 import Image from 'next/image';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { SwiperSlide, Swiper } from 'swiper/react';
-import { Bean1, Bean2 } from '../../../public/images';
+import { Bean1, Bean2 } from '../../../../public/images';
 import { ICoffee } from './CoffeeCategSwiperSect2';
 import 'swiper/css';
 
@@ -28,14 +28,18 @@ const CoffeeCategSliderSwipSec2: React.FC<IProps> = ({
   handleSetActiveIndex,
   activeIndex,
 }) => {
+  const [width, setSidth] = useState<number>(800);
   console.log(activeIndex);
-  const width = window.innerWidth;
+  useEffect(() => {
+    const width = window.innerWidth;
+    setSidth(width);
+  }, []);
   return (
     <>
       <Swiper
         speed={500}
         direction='vertical'
-        modules={[Mousewheel]} // ✅ Add module here
+        modules={[Mousewheel]}
         mousewheel={{
           forceToAxis: true,
           sensitivity: 4,
