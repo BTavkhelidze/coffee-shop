@@ -29,7 +29,7 @@ function CoffeStoreS2() {
   const y = useTransform(scrollYProgress, [0, 1], [0, height * 2]);
 
   return (
-    <section className='h-[145vh]  w-full  '>
+    <section className='h-[145vh] hidden lg:block w-full  '>
       <div ref={container} className='w-full  h-full overflow-hidden'>
         <motion.div
           style={{ y }}

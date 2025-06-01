@@ -10,7 +10,6 @@ export default function Home() {
       <HeroSect1 />
       <CoffeStoreS2 />
       <BuySubscribeAbout />
-      <div className='h-screen w-full bg-red-500'>About Us</div>
     </main>
   );
 }

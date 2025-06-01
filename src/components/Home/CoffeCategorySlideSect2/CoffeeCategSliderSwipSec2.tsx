@@ -28,7 +28,7 @@ const CoffeeCategSliderSwipSec2: React.FC<IProps> = ({
   const { width } = useDimension();
 
   return (
-    <div className='w-full h-screen'>
+    <div className=' w-full bg-red-300 h-screen'>
       <Swiper
         ref={swiperRef}
         speed={500}
@@ -39,9 +39,9 @@ const CoffeeCategSliderSwipSec2: React.FC<IProps> = ({
       >
         {categories.map((el, i) => (
           <SwiperSlide key={el.id}>
-            <div className='w-full h-full flex flex-col lg:flex-row'>
+            <div className='w-full h-full flex flex-col lg:flex-row '>
               <div
-                className='flex-1 flex justify-center items-center h-full'
+                className='flex-1 flex justify-center items-center h-full px-5'
                 style={{ background: el.bgColor }}
               >
                 <div className='flex gap-10 relative'>
@@ -201,7 +201,7 @@ const CoffeeCategSliderSwipSec2: React.FC<IProps> = ({
                   </AnimatePresence>
                 </div>
               </div>
-              <div className='flex-1 h-full flex items-center justify-center'>
+              <div className='flex-1 h-full flex items-center justify-start lg:justify-center px-5'>
                 <AnimatePresence mode='wait'>
                   {activeIndex === i && (
                     <motion.div
@@ -209,7 +209,7 @@ const CoffeeCategSliderSwipSec2: React.FC<IProps> = ({
                       animate={{ y: 0, opacity: 1 }}
                       exit={{ y: '-100px', opacity: 0 }}
                       transition={{ duration: 1 }}
-                      className='flex max-w-[60%] flex-col text-start text-[#242120] gap-10'
+                      className='flex  max-w-[60%] flex-col text-start text-[#242120] gap-10'
                     >
                       <h3 className='text-4xl'>{el.name}</h3>
                       <p className='text-xs'>{el.description}</p>

@@ -127,7 +127,7 @@ export default function CoffeCategSwiperSect2() {
           </div>
         ))}
       </div>
-      <div className='absolute hidden space-y-2    right-20 bottom-10  translate-x-1/2 z-10 lg:flex flex-col gap-2  rounded'>
+      <div className='absolute  space-y-2  right-10 lg:right-20 lg:bottom-10 bottom-1/2 translate-y-1/2 z-10 lg:flex flex-col gap-2  rounded'>
         <FaAngleUp
           className='cursor-pointer'
           onClick={() => swiperRef.current?.slidePrev()}

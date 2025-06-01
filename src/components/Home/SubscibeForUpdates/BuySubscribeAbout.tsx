@@ -18,8 +18,11 @@ function BuySubscribeAbout() {
 
   const y = useTransform(scrollYProgress, [0, 1], [0, height * 2]);
   return (
-    <section ref={container} className='flex relative flex-col h-[110vh]'>
-      <motion.div style={{ y }} className='absolute -top-[85%] left-0 -z-10'>
+    <section ref={container} className='flex relative flex-col h-[120vh]'>
+      <motion.div
+        style={{ y }}
+        className=' hidden lg:flex absolute -top-[75%] left-0 -z-10'
+      >
         <Image src={Tbilisi} alt='Tbilisi view Image' />
       </motion.div>
       <div>
