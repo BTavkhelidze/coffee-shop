@@ -17,13 +17,6 @@ function HeroSect1() {
       ref={container}
       className='w-full flex h-[120vh]  relative overflow-hidden'
     >
-      {/* <div className='w-full absolute h-full top-0 left-0'>
-        <Image
-          src={HeroImg}
-          alt='hero background image'
-          className='w-full h-full'
-        />
-      </div> */}
       <motion.div
         style={{ y }}
         className='flex-1 flex items-end    w-full h-[50%]  p-5 '

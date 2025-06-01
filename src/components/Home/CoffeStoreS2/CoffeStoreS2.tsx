@@ -33,7 +33,7 @@ function CoffeStoreS2() {
       <div ref={container} className='w-full  h-full overflow-hidden'>
         <motion.div
           style={{ y }}
-          className='w-full h-full  -top-[55%] relative'
+          className='w-full h-full  -top-[65%] relative'
         >
           <Image
             src={CoffeShop}

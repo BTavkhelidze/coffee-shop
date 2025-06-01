@@ -23,8 +23,10 @@ import Bean2 from './CoffeeCategoriesHomePageSec2/bean2.webp';
 import HeroImg from './hero.png';
 import CoffeShop from './coffee-shop.jpg';
 import CoffeeCuo from './CoffeeCup.png';
+import Tbilisi from './tbilisi.webp';
 
 export {
+  Tbilisi,
   HeroImg,
   Bean1,
   Bean2,
