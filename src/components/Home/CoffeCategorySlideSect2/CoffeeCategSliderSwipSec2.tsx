@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
+import { Mousewheel, FreeMode } from 'swiper/modules';
 import { AnimatePresence, motion, easeIn, easeInOut } from 'framer-motion';
 import { Bean1, Bean2 } from '../../../../public/images';
 
@@ -28,13 +28,15 @@ const CoffeeCategSliderSwipSec2: React.FC<IProps> = ({
   const { width } = useDimension();
 
   return (
-    <div className=' w-full  h-screen'>
+    <div className=' w-full  h-screen  '>
       <Swiper
         speed={500}
-        direction='vertical'
+        direction={width < 1200 ? 'horizontal' : 'vertical'}
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         onSlideChange={(swiper) => handleSetActiveIndex(swiper.activeIndex)}
         className='w-full h-full'
+        // allowTouchMove={false}
+        modules={[FreeMode]}
       >
         {categories.map((el, i) => (
           <SwiperSlide key={el.id}>
