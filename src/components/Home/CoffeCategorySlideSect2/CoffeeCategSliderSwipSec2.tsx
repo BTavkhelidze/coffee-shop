@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Mousewheel, FreeMode } from 'swiper/modules';
+import { FreeMode } from 'swiper/modules';
 import { AnimatePresence, motion, easeIn, easeInOut } from 'framer-motion';
 import { Bean1, Bean2 } from '../../../../public/images';
 
