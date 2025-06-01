@@ -1,6 +1,7 @@
 'use client';
 import React, { useRef, useState } from 'react';
-
+import { FaAngleDown } from 'react-icons/fa6';
+import { FaAngleUp } from 'react-icons/fa6';
 import {
   MochaCup,
   LatteCup,
@@ -22,7 +23,7 @@ import {
   BlackCoffeeSlideImg,
   EspressoNavSlideImg,
   MochaNavSlideImg,
-} from '../../../public/images';
+} from '../../../../public/images';
 
 import Image, { StaticImageData } from 'next/image';
 
@@ -125,6 +126,16 @@ export default function CoffeCategSwiperSect2() {
             </div>
           </div>
         ))}
+      </div>
+      <div className='absolute hidden space-y-2    right-20 bottom-10  translate-x-1/2 z-10 lg:flex flex-col gap-2  rounded'>
+        <FaAngleUp
+          className='cursor-pointer'
+          onClick={() => swiperRef.current?.slidePrev()}
+        />
+        <FaAngleDown
+          className='cursor-pointer'
+          onClick={() => swiperRef.current?.slideNext()}
+        />
       </div>
 
       <CoffeeCategSliderSwipSec2
