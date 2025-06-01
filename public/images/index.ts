@@ -22,6 +22,7 @@ import Bean1 from './CoffeeCategoriesHomePageSec2/bean1.png';
 import Bean2 from './CoffeeCategoriesHomePageSec2/bean2.webp';
 import HeroImg from './hero.png';
 import CoffeShop from './coffee-shop.jpg';
+import CoffeeCuo from './CoffeeCup.png';
 
 export {
   HeroImg,
@@ -48,4 +49,5 @@ export {
   EspressoNavSlideImg,
   MochaNavSlideImg,
   CoffeShop,
+  CoffeeCuo,
 };

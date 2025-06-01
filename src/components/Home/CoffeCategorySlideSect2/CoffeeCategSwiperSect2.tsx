@@ -1,6 +1,7 @@
 'use client';
-import React, { useEffect, useRef, useState } from 'react';
-
+import React, { useRef, useState } from 'react';
+import { FaAngleDown } from 'react-icons/fa6';
+import { FaAngleUp } from 'react-icons/fa6';
 import {
   MochaCup,
   LatteCup,
@@ -103,23 +104,6 @@ export default function CoffeCategSwiperSect2() {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const swiperRef = useRef<any>(null);
   const [activeIndex, setActiveIndex] = useState(0);
-  const [isMenuOpen, setIsMenuOpen] = useState(true);
-
-  useEffect(() => {
-    console.log(isMenuOpen);
-    if (isMenuOpen) {
-      document.body.style.overflow = 'hidden';
-      document.documentElement.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-      document.documentElement.style.overflow = '';
-    }
-
-    return () => {
-      document.body.style.overflow = '';
-      document.documentElement.style.overflow = '';
-    };
-  }, [isMenuOpen]);
 
   return (
     <section className='relative w-full h-screen '>
@@ -142,6 +126,16 @@ export default function CoffeCategSwiperSect2() {
             </div>
           </div>
         ))}
+      </div>
+      <div className='absolute hidden space-y-2    right-20 bottom-10  translate-x-1/2 z-10 lg:flex flex-col gap-2  rounded'>
+        <FaAngleUp
+          className='cursor-pointer'
+          onClick={() => swiperRef.current?.slidePrev()}
+        />
+        <FaAngleDown
+          className='cursor-pointer'
+          onClick={() => swiperRef.current?.slideNext()}
+        />
       </div>
 
       <CoffeeCategSliderSwipSec2

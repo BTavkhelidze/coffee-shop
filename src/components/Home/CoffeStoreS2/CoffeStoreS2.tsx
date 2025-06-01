@@ -1,5 +1,5 @@
 'use client';
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useTransform, useScroll, motion } from 'motion/react';
 import { CoffeShop } from '../../../../public/images';
 import Image from 'next/image';
@@ -8,12 +8,12 @@ import useDimension from '@/useDimensions';
 
 function CoffeStoreS2() {
   const container = useRef(null);
+
   const { height } = useDimension();
   const { scrollYProgress } = useScroll({
     target: container,
     offset: ['start end', 'end start'],
   });
-  console.log(scrollYProgress);
 
   useEffect(() => {
     const lenis = new Lenis();
@@ -29,7 +29,7 @@ function CoffeStoreS2() {
   const y = useTransform(scrollYProgress, [0, 1], [0, height * 2]);
 
   return (
-    <section className='h-[175vh] mt-10 w-full  '>
+    <section className='h-[145vh]  w-full  '>
       <div ref={container} className='w-full  h-full overflow-hidden'>
         <motion.div
           style={{ y }}
