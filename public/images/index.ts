@@ -20,8 +20,14 @@ import EspressoCup from './CoffeeCategoriesHomePageSec2/espresso-cup.webp';
 import MochaCup from './CoffeeCategoriesHomePageSec2/mocha-cup.webp';
 import Bean1 from './CoffeeCategoriesHomePageSec2/bean1.png';
 import Bean2 from './CoffeeCategoriesHomePageSec2/bean2.webp';
+import HeroImg from './hero.png';
+import CoffeShop from './coffee-shop.jpg';
+import CoffeeCuo from './CoffeeCup.png';
+import Tbilisi from './tbilisi.webp';
 
 export {
+  Tbilisi,
+  HeroImg,
   Bean1,
   Bean2,
   MochaCup,
@@ -44,4 +50,6 @@ export {
   BlackCoffeeSlideImg,
   EspressoNavSlideImg,
   MochaNavSlideImg,
+  CoffeShop,
+  CoffeeCuo,
 };
