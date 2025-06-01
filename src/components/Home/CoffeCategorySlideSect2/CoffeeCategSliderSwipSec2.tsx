@@ -28,7 +28,7 @@ const CoffeeCategSliderSwipSec2: React.FC<IProps> = ({
   const { width } = useDimension();
 
   return (
-    <div className=' w-full bg-red-300 h-screen'>
+    <div className=' w-full  h-screen'>
       <Swiper
         ref={swiperRef}
         speed={500}

@@ -1,5 +1,5 @@
 'use client';
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useTransform, useScroll, motion } from 'motion/react';
 import { CoffeShop } from '../../../../public/images';
 import Image from 'next/image';

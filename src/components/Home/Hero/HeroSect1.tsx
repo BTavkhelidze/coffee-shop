@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import { CoffeeCuo } from '../../../../public/images';
 import { useScroll, useTransform, motion } from 'motion/react';
 
@@ -40,11 +40,11 @@ function HeroSect1() {
         </p>
 
         <p className='text-md'>
-          At our café, every cup is crafted with intention — from the smooth,
+          {` At our café, every cup is crafted with intention — from the smooth,
           velvety latte to the bold simplicity of black coffee. Whether you're
           stopping in for a peaceful solo moment or meeting friends for an
           afternoon pick-me-up, we’ve created a space that feels like home (but
-          with better coffee).
+          with better coffee).`}
         </p>
 
         <p>
