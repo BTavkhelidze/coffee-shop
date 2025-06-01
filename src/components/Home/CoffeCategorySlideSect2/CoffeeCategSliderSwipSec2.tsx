@@ -30,7 +30,6 @@ const CoffeeCategSliderSwipSec2: React.FC<IProps> = ({
   return (
     <div className=' w-full  h-screen'>
       <Swiper
-        ref={swiperRef}
         speed={500}
         direction='vertical'
         onSwiper={(swiper) => (swiperRef.current = swiper)}

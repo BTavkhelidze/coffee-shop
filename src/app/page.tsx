@@ -5,7 +5,7 @@ import BuySubscribeAbout from '@/components/Home/SubscibeForUpdates/BuySubscribe
 
 export default function Home() {
   return (
-    <main>
+    <main className=''>
       <CoffeCategSwiperSect2 />
       <HeroSect1 />
       <CoffeStoreS2 />

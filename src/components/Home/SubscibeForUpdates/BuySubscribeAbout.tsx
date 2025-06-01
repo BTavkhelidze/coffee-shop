@@ -18,7 +18,10 @@ function BuySubscribeAbout() {
 
   const y = useTransform(scrollYProgress, [0, 1], [0, height * 2]);
   return (
-    <section ref={container} className='flex relative flex-col h-[120vh]'>
+    <section
+      ref={container}
+      className='flex relative flex-col h-screen lg:h-[120vh]'
+    >
       <motion.div
         style={{ y }}
         className=' hidden lg:flex absolute -top-[75%] left-0 -z-10'

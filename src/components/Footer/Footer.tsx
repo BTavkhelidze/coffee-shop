@@ -2,7 +2,7 @@ import React from 'react';
 
 function Footer() {
   return (
-    <footer className=' bottom-0 flex h-[42vh] flex-col w-full bg-[#E7E1D9]'>
+    <footer className=' z-10 flex flex-col w-full bg-[#E7E1D9]'>
       <div className='w-full mt-20 flex flex-col items-center'>
         <h2 className='text-4xl  mb-20'>Stoneground Coffee</h2>
         <p className='cursor-none'>FIND US ON INSTAGRAM!</p>
